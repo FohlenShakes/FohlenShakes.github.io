@@ -1,14 +1,435 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>FohlenShakes</title>
+  <meta name="title" content="Fohlenshakes">
+  <meta name="description" content="Unternehmen, welches Protein-Shakes produziert.">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg">
+
 </head>
+
 <body>
-    <h1>
-        Loading...
-    </h1>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home" class="logo-light">
+
+        <img src="./assets/images/logo-dark.svg" width="74" height="24" alt="Adex home" class="logo-dark">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="about.html" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="projects.html" class="navbar-link">Projects</a>
+          </li>
+
+          <li>
+            <a href="blog.html" class="navbar-link">Blog</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:Fohlen.Shakes@gmail.com" class="contact-link">Fohlen.Shakes@gmail.com</a>
+
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/fohlen.shakes/?next=%2F" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://youtube.com/" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+          
+
+        </ul>
+
+      </nav>
+
+      <a href="mailto:Fohlen.Shakes@gmail.com" class="btn btn-primary">Kontaktier Uns</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">FohlenShakes</h1>
+
+            <p class="hero-text">
+              Wir sind ein Unternehmen, welches Protein-Shakes mit vielen verschiedenen Geschmäckern produziert.
+            </p>
+
+            <div class="btn-wrapper">
+
+              <a href="about.html" class="btn btn-primary" href="">Erfahre mehr</a>
+              <a href="mailto:Fohlen.Shakes@gmail.com" class="btn btn-outline">Contact Us</a>
+
+            </div>
+
+          </div>
+
+          <div class="hero-slider" data-slider>
+
+            <div class="slider-inner">
+              <ul class="slider-container" data-slider-container>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/hero-slide-1.jpg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="./assets/images/hero-slide-2.jpg" width="575" height="550" alt="hero banner"
+                        class="img-cover">
+                    </figure>
+
+                  </div>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/hero-slide-3.jpg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+              </ul>
+            </div>
+
+            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" aria-labelledby="about-label">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-us-1.jpg" width="800" height="531" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <h1 class="h1 section-title">
+              Unsere Firma
+            </h1>
+
+            <p>
+            Die Firma "FohlenShakes" ist ein junges Unternehmen, welches von Schülern gegründet wurde. 
+            Die Idee für die Firma entstand aus der Leidenschaft der Schüler für Sport und Ernährung. 
+            Wir erkannten die Bedeutung von Proteinen für den Muskelaufbau und beschlossen, unser eigenes Protein-Shake zu entwickeln.
+            Obwohl FohlenShakes von Schülern gegründet wurde, haben wir hart gearbeitet, um unsere Produkte auf dem Markt zu etablieren. 
+            Wir arbeiten eng mit unseren Kunden zusammen, um sicherzustellen, dass unsere Produkte von höchster Qualität sind. 
+            Wir bieten eine vielzahl an Geschmäckern von Protein-Shakes an.
+            </p>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #LOCATION
+      -->
+      
+      <h1 style="text-align:center">
+        Unser Standort:
+      </h1>
+
+      <h4 style="text-align:center">
+        FohlenShakes <br>
+        An der Fohlenkoppel 3 <br>
+        31137 Hildesheim
+      </h4>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2447.3831342677654!2d9.917726316040177!3d52.163727170322915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47baaf7a11cfe48d%3A0x5e59f3b10fa42d3b!2sGymnasium%20Himmelsth%C3%BCr!5e0!3m2!1sde!2sde!4v1679328419462!5m2!1sde!2sde" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+      <!-- 
+        - #GOALS
+      -->
+
+
+      <section class="about" aria-labelledby="about-label">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/goals.jpg" width="800" height="580" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <h1 class="h1 section-title">
+              Unsere Ziele
+            </h1>
+
+            <p>
+            Als eine Firma, die sich auf die Produktion von Protein-Shakes spezialisiert hat, möchten wir Fitness-Anfänger helfen, 
+            ihren Protein-Gehalt zu füllen. Mit unseren Protein-Shakes ist dies möglich und wir bieten zudem eine Vielzahl an Geschmäckern an.
+            Wir möchten eine gute Zufriedenheit der Kunden erreichen und um dies Ziel zu erfülle, arbeiten wir eng mit unseren kunden zusammem.
+
+            </p>
+
+          </div>
+
+        </div>
+      </section>
+    
+          <!-- 
+        - #CTA
+      -->
+
+      <section class="cta" aria-label="call to action">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            FohlenShakes - Be the Stallion!
+          </h2>
+
+          
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+      <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home">
+        </a>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.tiktok.com/@fohlen_shakes" class="social-link">
+              <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Get in Touch</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            An der Fohlenkoppel 3 
+            31137 HildesheimAdresse
+          </address>
+        </li>
+
+        <li>
+          <a href="mailto:Fohlen.Shakes@gmail.com" class="footer-link">Fohlen.Shakes@gmail.com</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Learn More</p>
+        </li>
+
+        <li>
+          <a href="about.html" class="footer-link">About Us</a>
+          
+        </li>
+
+        <li>
+          <a href="projects.html" class="footer-link">Projects</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Blog</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+        <li>
+          <p class="h4 footer-list-title">Credits</p>
+        </li>
+        <li>
+          Pictures:<a href="https://www.freepik.com/free-vector/sport-nutrition-diet-improving-athletic-performance-vitamins-proteins-supplements-strength-sports-weightlifting-bodybuilding-vector-isolated-concept-metaphor-illustration_11663531.htm#query=vectorjuice%20protein%20shake&position=4&from_view=search&track=ais">Image by vectorjuice on Freepik</a>
+        </li>
+
+        <li>
+          <a href="https://www.freepik.com/free-vector/team-goals-concept-illustration_12704338.htm#query=team%20goals&position=2&from_view=search&track=ais">Image by storyset on Freepik</a>
+        </li>
+
+      </ul>
+      
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
