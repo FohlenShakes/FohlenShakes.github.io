@@ -131,6 +131,8 @@ body {
   color: var(--black-coral);
   font-size: 1.6rem;
   line-height: 1.7;
+
+  
 }
 
 body.nav-active { overflow: hidden; }
@@ -556,7 +558,34 @@ body.nav-active { overflow: hidden; }
 }
 
 
+/*-----------------------------------*\
+  #TESTIMONIAL
+\*-----------------------------------*/
 
+.quote { text-align: center; }
+
+.quote .section-title { margin-block-end: 50px; }
+
+.quote-card {
+  padding: 40px;
+  box-shadow: var(--shadow-2);
+  border-radius: var(--radius-6);
+}
+
+.quote-card .card-title { margin-block: 16px 10px; }
+
+.quote-card .btn-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin-block-start: 10px;
+  color: var(--violet-blue-crayola);
+  font-weight: var(--fw-700);
+  transition: var(--transition-1);
+}
+
+.quote-card .btn-text:is(:hover, :focus-visible) { opacity: 0.9; }
 
 
 /*-----------------------------------*\
